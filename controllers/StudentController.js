@@ -1,6 +1,15 @@
+const student = require("../models/studentModels");
+
 class StudentController {
   static getStudent(req, res) {
-    res.send("Student Page List");
+    student
+      .getAllStudent()
+      .then((result) => {
+        res.send(result);
+      })
+      .catch((e) => {
+        res.send(e);
+      });
   }
 
   static create(req, res) {
@@ -10,11 +19,14 @@ class StudentController {
   static getInformation(req, res) {
     const id = Number(req.params.userId);
 
-    if (typeof id === "number" && isNaN(id) === false) {
-      res.send(`Information Page ${id}`);
-    } else {
-      res.send("Id must be a number!");
-    }
+    student
+      .getInformation(id)
+      .then((result) => {
+        res.send(result);
+      })
+      .catch((e) => {
+        res.send(e);
+      });
   }
 }
 
