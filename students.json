@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Gaby",
+    "major": "Informasi",
+    "semester": "4",
+    "city": "Jakarta"
+  },
+  {
+    "id": 2,
+    "name": "Puspa",
+    "major": "Informatika",
+    "semester": "6",
+    "city": "Bandung"
+  }
+]

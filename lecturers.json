@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Aryo",
+    "subject": "dart",
+    "age": 23,
+    "city": "Jakarta"
+  },
+  {
+    "id": 2,
+    "name": "MAN",
+    "subject": "kotlin",
+    "age": 25,
+    "city": "Bandung"
+  },
+  {
+    "id": 3,
+    "name": "Love",
+    "subject": "flutter",
+    "age": 2,
+    "city": "Jaksel"
+  }
+]
