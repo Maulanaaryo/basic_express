@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Gaby",
+    "name": "Gaby Cantik",
     "major": "Informasi",
     "semester": "4",
     "city": "Jakarta"
@@ -11,6 +11,13 @@
     "name": "Puspa",
     "major": "Informatika",
     "semester": "6",
+    "city": "Bandung"
+  },
+  {
+    "id": 3,
+    "name": "Aliya",
+    "major": "Informasi",
+    "semester": "Lulus",
     "city": "Bandung"
   }
 ]
