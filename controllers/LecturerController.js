@@ -14,7 +14,16 @@ class LecturerController {
   }
 
   static create(req, res) {
-    res.send("Create Lecturer Page");
+    // console.log(req.body);
+    // res.send("Create Lecturer Page");
+    lecturer
+      .create(req.body)
+      .then((result) => {
+        res.send(result);
+      })
+      .catch((e) => {
+        res.send(e);
+      });
   }
 
   static getInformation(req, res) {
@@ -22,6 +31,43 @@ class LecturerController {
 
     lecturer
       .getInformation(id)
+      .then((result) => {
+        res.send(result);
+      })
+      .catch((e) => {
+        res.send(e);
+      });
+  }
+
+  static delete(req, res) {
+    const id = Number(req.params.id);
+
+    lecturer
+      .delete(id)
+      .then((result) => {
+        res.send(result);
+      })
+      .catch((e) => {
+        res.send(e);
+      });
+  }
+
+  static update(req, res) {
+    const id = Number(req.params.id);
+    lecturer
+      .update(id, req.body)
+      .then((result) => {
+        res.send(result);
+      })
+      .catch((e) => {
+        res.send(e);
+      });
+  }
+
+  static search(req, res) {
+    console.log(req.query);
+    lecturer
+      .search(req.query)
       .then((result) => {
         res.send(result);
       })

@@ -3,8 +3,14 @@ const lecturerController = require("../controllers/LecturerController");
 
 lecturerRoute.get("/", lecturerController.getLecturers);
 
-lecturerRoute.get("/create", lecturerController.create);
+lecturerRoute.post("/create", lecturerController.create);
 
 lecturerRoute.get("/information/:userId", lecturerController.getInformation);
+
+lecturerRoute.delete("/delete/:id", lecturerController.delete);
+
+lecturerRoute.post("/update/:id", lecturerController.update);
+
+lecturerRoute.get("/search", lecturerController.search);
 
 module.exports = lecturerRoute;
